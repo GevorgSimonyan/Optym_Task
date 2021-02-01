@@ -27,7 +27,11 @@ public class Util {
         return (input == null || input.trim().length() == 0);
     }
 
-    public static Pageable getPagging(Integer pageNo, Integer pageSize, String sortBy, Integer direction){
+    public static Pageable getPagging(Integer pageNo, Integer pageSize, String sortBy, Integer direction) {
+
+        if (pageNo != 0) {
+            pageNo -= 1;
+        }
 
         Sort.Direction sortDirection = Sort.DEFAULT_DIRECTION;
         if (direction == 1) {

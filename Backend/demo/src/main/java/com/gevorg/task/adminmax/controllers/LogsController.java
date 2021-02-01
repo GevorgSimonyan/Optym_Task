@@ -36,7 +36,7 @@ public class LogsController extends BaseController {
 
 
     @GetMapping("logs")
-    public ResponseEntity<LogsResultModel> logs(@RequestParam(defaultValue = "0") Integer pageNo,
+    public ResponseEntity<LogsResultModel> logs(@RequestParam(defaultValue = "1") Integer pageNo,
                                                 @RequestParam(defaultValue = "10") Integer pageSize,
                                                 @RequestParam(defaultValue = "createdOn") String sortBy,
                                                 @ApiParam(value = "Sort Direction 1 is ASC -1 is Desc")
