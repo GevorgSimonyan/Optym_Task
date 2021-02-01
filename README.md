@@ -37,7 +37,7 @@ You can find and test endpoinst on SwaggerUI. for that after frontend run need t
 
 ## Authors
 
-* **Gevorg Simonyan** - *Initial work* - [PurpleBooth](https://github.com/GevorgSimonyan)
+* **Gevorg Simonyan** 
 
 
 
